@@ -1050,9 +1050,9 @@ PADRES Y PADRINOS
 
         135deg,
 
-        var(--rosa),
+        var(--titulo),
 
-        var(--lila)
+        var(--titulo)
 
     );
 
@@ -1340,7 +1340,7 @@ MESA DE REGALOS
 
     margin-top:35px;
 
-    color:var(--rosa-fuerte);
+    color:var(--titulo);
 
     font-size:25px;
 
@@ -1773,7 +1773,7 @@ QR FOTOS
 
     margin-top:35px;
 
-    color:var(--rosa-fuerte);
+    color:var(--titulo);
 
     font-size:25px;
 
@@ -1981,7 +1981,7 @@ CIERRE FINAL
 
     margin-top:35px;
 
-    color:var(--lila-claro);
+    color:var(--titulo);
 
     font-size:28px;
 
@@ -2281,11 +2281,7 @@ left:-8px;
 
     cursor:pointer;
 
-     background:linear-gradient(
-        135deg,
-        var(--titulo),
-        var(--titulo)
-    );
+     background:var(--titulo);
 
     color:white;
 
@@ -2310,7 +2306,7 @@ left:-8px;
 
     transform:scale(1.1);
 
-    background:#dd8d9d;
+    background:VAR(--titulo);
 
 }
 
