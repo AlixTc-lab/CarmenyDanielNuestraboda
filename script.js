@@ -40,26 +40,29 @@ setInterval(actualizarContador,1000);
 
 
 /*======================================================
-FORMULARIO MENSAJES
+FORMULARIO MENSAJES (Actualizado)
 ======================================================*/
 
-const URL_SCRIPT = 
-"https://script.google.com/macros/s/AKfycbxiOHfYARrsoSYsoUR0X4ZTpkuISphuQCGP6W_mPGhULcbQoi8BK4hkVXjqSfCHBH6D/exec";
+const URL_SCRIPT = "https://script.google.com/macros/s/AKfycbxiOHfYARrsoSYsoUR0X4ZTpkuISphuQCGP6W_mPGhULcbQoi8BK4hkVXjqSfCHBH6D/exec";
 
 const formulario = document.getElementById("formConfirmacion");
 
 formulario.addEventListener("submit", async function(e){
     e.preventDefault();
 
-    // Recopilamos únicamente los datos que quedaron en el formulario
     const datos = {
         nombre: document.getElementById("nombre").value,
         mensaje: document.getElementById("mensaje").value
     };
 
     try {
+        // CORRECCIÓN CLAVE: Agregamos mode: "no-cors" y los headers
         await fetch(URL_SCRIPT, {
             method: "POST",
+            mode: "no-cors",
+            headers: {
+                "Content-Type": "application/json"
+            },
             body: JSON.stringify(datos)
         });
 
