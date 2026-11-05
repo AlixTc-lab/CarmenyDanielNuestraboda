@@ -44,7 +44,7 @@ FORMULARIO MENSAJES
 ======================================================*/
 
 const URL_SCRIPT = 
-"https://script.google.com/macros/s/AKfycbzqIBV8qccC8ITV4Jsa21IYCmkSlMbuxSetgK4macTm9iIeBF3jmVZMWJa_3IYVuvUi/exec";
+"https://script.google.com/macros/s/AKfycbxiOHfYARrsoSYsoUR0X4ZTpkuISphuQCGP6W_mPGhULcbQoi8BK4hkVXjqSfCHBH6D/exec";
 
 const formulario = document.getElementById("formConfirmacion");
 
